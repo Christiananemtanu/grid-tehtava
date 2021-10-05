@@ -9,10 +9,42 @@
 
 		<style>
 
-			/* KIRJOITA CSS GRID KOODI TÄHÄN : */
+			.gridwrapper {
+				display: grid;
+				grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+				grid-template-rows: auto;
+				grid-template-areas:
+				". subhead subhead subhead ."
+				"mainnav feature-img feature-img feature-img quote"
+				". content content content ."
+				"footer footer footer footer footer";
+			}
+			nav {
+				grid-area: mainnav;
+			}
+
+			h2 {
+  				grid-area: subhead;
+			}
+
+			section {
+				grid-area: content;
+			}
+
+			img {
+				grid-area: feature-img;
+			}
+			blockquote {
+				grid-area: quote;
+			}
+			footer {
+				grid-area: footer;
+			
+			}
 
 
-
+/* grid-area, display, grid-template-columns, grid-template-rows ja grid-template-areas.
+ */
 		</style>
 	</head>
 	<body>
